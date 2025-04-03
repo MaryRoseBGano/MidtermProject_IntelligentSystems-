@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import { json, type RequestHandler } from "@sveltejs/kit";
 import { Ollama } from "ollama";
 
@@ -48,3 +54,4 @@ ${JSON.stringify(dataOfMasterUser)}
         return json({ error: "Failed to connect to Ollama or process the chat." }, { status: 500 });
     }
 };
+
